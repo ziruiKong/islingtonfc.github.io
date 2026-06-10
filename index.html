@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Official website concept for Islington City Football Club." />
+    <title>Islington City FC | Official Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Islington City home">
+        <img src="assets/islington-city-crest.svg" alt="Islington City FC crest" />
+        <span>Islington City</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#news">News</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#teams">Teams</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#shop">Shop</a>
+        <a href="#membership">Membership</a>
+      </nav>
+      <div class="header-actions" aria-label="Utility links">
+        <a href="#tickets">Tickets</a>
+        <a class="icon-link" href="#membership" aria-label="Account">◎</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" role="img" aria-label="Islington City players celebrating under stadium lights"></div>
+        <div class="hero-content">
+          <p class="eyebrow">First Team • Club News</p>
+          <h1 id="hero-title">A new era rises in North London</h1>
+          <p class="hero-copy">Follow Islington City FC through every matchday, academy milestone and community story from the heart of the borough.</p>
+          <a class="button primary" href="#news">Read the story</a>
+        </div>
+        <aside class="match-card" aria-label="Next fixture">
+          <img src="assets/islington-city-crest.svg" alt="" />
+          <div>
+            <span>Next Match</span>
+            <strong>Islington City vs Camden Town</strong>
+            <small>Saturday • 15:00 • Highbury Fields</small>
+          </div>
+        </aside>
+        <aside class="poll-card" aria-label="Fan poll">
+          <span>Fan Poll</span>
+          <strong>Who was your player of the month?</strong>
+        </aside>
+      </section>
+
+      <section class="section section-light" id="news" aria-labelledby="today-title">
+        <div class="section-header">
+          <div>
+            <p class="kicker">Latest from N1</p>
+            <h2 id="today-title">Today on IslingtonCity.com</h2>
+          </div>
+          <div class="carousel-controls" aria-hidden="true"><span></span><span></span></div>
+        </div>
+        <div class="card-grid news-grid">
+          <article class="story-card image-card">
+            <div class="story-image red-player"></div>
+            <p>First Team</p>
+            <h3>Captain Mara Lewis signs new two-year deal</h3>
+          </article>
+          <article class="story-card image-card">
+            <div class="story-image training"></div>
+            <p>Training</p>
+            <h3>Inside the final session before derby day</h3>
+          </article>
+          <article class="story-card image-card">
+            <div class="story-image academy"></div>
+            <p>Academy</p>
+            <h3>Under-18s graduate into senior matchday squad</h3>
+          </article>
+          <article class="story-card image-card compact-hide">
+            <div class="story-image crowd"></div>
+            <p>Supporters</p>
+            <h3>Travel guide: away day at Regent's Park</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" aria-labelledby="video-title">
+        <div class="section-header invert">
+          <div>
+            <p class="kicker">Watch</p>
+            <h2 id="video-title">Top videos</h2>
+          </div>
+          <a href="#membership">View all</a>
+        </div>
+        <div class="card-grid video-grid">
+          <article class="media-card"><div class="portrait player-one"></div><span>08:12</span><h3>Lewis: “This shirt belongs to the borough”</h3></article>
+          <article class="media-card"><div class="portrait goalkeeper"></div><span>02:48</span><h3>Five saves that protected a clean sheet</h3></article>
+          <article class="media-card"><div class="portrait stadium"></div><span>06:30</span><h3>Matchday sights and sounds from Highbury</h3></article>
+          <article class="media-card"><div class="portrait interview"></div><span>04:15</span><h3>The academy pathway explained</h3></article>
+        </div>
+      </section>
+
+      <section class="section section-red" id="shop" aria-labelledby="store-title">
+        <div class="section-header invert">
+          <div>
+            <p class="kicker">Club Store</p>
+            <h2 id="store-title">Best of Islington City Store</h2>
+          </div>
+          <div class="carousel-controls pale" aria-hidden="true"><span></span><span></span></div>
+        </div>
+        <div class="card-grid product-grid">
+          <article class="product-card"><div></div><p>Home Kit</p><h3>2026 Home shirt</h3></article>
+          <article class="product-card"><div></div><p>Training Wear</p><h3>Navy travel hoodie</h3></article>
+          <article class="product-card"><div></div><p>Accessories</p><h3>City crest scarf</h3></article>
+          <article class="product-card"><div></div><p>Junior</p><h3>Mini Citizens bundle</h3></article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="fixtures" aria-labelledby="fixtures-title">
+        <div class="section-header invert">
+          <div>
+            <p class="kicker">Season Centre</p>
+            <h2 id="fixtures-title">Fixtures & results</h2>
+          </div>
+          <a href="#tickets">Tickets</a>
+        </div>
+        <div class="fixture-strip">
+          <article>
+            <span>Sat 13 Jun</span>
+            <strong>Islington City</strong>
+            <em>vs</em>
+            <strong>Camden Town</strong>
+          </article>
+          <article>
+            <span>Tue 23 Jun</span>
+            <strong>Hackney Rovers</strong>
+            <em>1 - 2</em>
+            <strong>Islington City</strong>
+          </article>
+          <article>
+            <span>Sat 27 Jun</span>
+            <strong>Islington City</strong>
+            <em>vs</em>
+            <strong>Hampstead Albion</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-light" id="tickets" aria-labelledby="tickets-title">
+        <div class="section-header">
+          <div>
+            <p class="kicker">Matchday</p>
+            <h2 id="tickets-title">Tickets and tours</h2>
+          </div>
+          <div class="carousel-controls" aria-hidden="true"><span></span><span></span></div>
+        </div>
+        <div class="card-grid ticket-grid">
+          <article class="ticket-card"><div></div><p>Next home fixture</p><h3>Get tickets for derby day</h3></article>
+          <article class="ticket-card"><div></div><p>Families</p><h3>Family stand offers</h3></article>
+          <article class="ticket-card"><div></div><p>Women</p><h3>City Women season passes</h3></article>
+          <article class="ticket-card"><div></div><p>Experience</p><h3>Highbury Fields stadium tour</h3></article>
+        </div>
+      </section>
+
+      <section class="section section-light" id="teams" aria-labelledby="women-title">
+        <div class="section-header">
+          <div>
+            <p class="kicker">Women</p>
+            <h2 id="women-title">Islington City Women news</h2>
+          </div>
+          <div class="carousel-controls" aria-hidden="true"><span></span><span></span></div>
+        </div>
+        <div class="card-grid news-grid">
+          <article class="story-card image-card"><div class="story-image women-one"></div><p>Women</p><h3>City Women unveil ambitious summer schedule</h3></article>
+          <article class="story-card image-card"><div class="story-image women-two"></div><p>Match report</p><h3>Late winner earns cup semi-final place</h3></article>
+          <article class="story-card image-card"><div class="story-image women-three"></div><p>Feature</p><h3>Meet the coaches building the next generation</h3></article>
+          <article class="story-card image-card compact-hide"><div class="story-image women-four"></div><p>Tickets</p><h3>Season passes now available</h3></article>
+        </div>
+      </section>
+
+      <section class="membership section-dark" id="membership" aria-labelledby="member-title">
+        <div class="membership-copy">
+          <p class="kicker">Membership</p>
+          <h2 id="member-title">Become a City Member today</h2>
+          <p>Choose your tier, unlock priority tickets and receive exclusive digital content from players, coaches and club historians.</p>
+        </div>
+        <div class="membership-grid">
+          <article class="member-card red"><span>Premium</span><strong>The ultimate City package</strong></article>
+          <article class="member-card crowd-card"><span>Official</span><strong>For loyal match-goers</strong></article>
+          <article class="member-card family-card"><span>Junior</span><strong>A first shirt and mascot moments</strong></article>
+          <article class="member-card fan-card"><span>Forwarding</span><strong>For fans watching worldwide</strong></article>
+        </div>
+      </section>
+
+      <section class="partners" aria-labelledby="partners-title">
+        <p class="kicker" id="partners-title">Principal Partners</p>
+        <div class="partner-row">
+          <span>adidas</span>
+          <span>Northbank</span>
+          <span>Islington Gazette</span>
+          <span>Emirates Local</span>
+          <span>Canonbury Coffee</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/islington-city-crest.svg" alt="Islington City FC crest" />
+      <div>
+        <h2>Islington City Football Club</h2>
+        <p>Highbury Fields, London N1 • Built for supporters, families and the community.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#news">News</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#shop">Shop</a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
