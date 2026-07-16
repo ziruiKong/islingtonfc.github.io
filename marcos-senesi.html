@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcos Senesi | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html#top" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="index.html#tickets">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="player-profile-page player-template-page" data-player-template data-default-player="marcos-senesi">
+      <section class="player-profile-hero" data-player-hero>
+        <div class="player-profile-copy">
+          <h1 data-player-heading></h1>
+        </div>
+        <div class="profile-image-panel">
+          <img data-player-image src="assets/islington-logo.png" alt="" />
+        </div>
+      </section>
+
+      <nav class="profile-tabs" aria-label="Player sections">
+        <a href="#overview">Overview</a>
+        <a href="#biography">Biography</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#latest">Latest</a>
+      </nav>
+
+      <section class="profile-overview" id="overview">
+        <div class="career-panel" id="statistics">
+          <div class="profile-section-heading">
+            <h2>Career Stats</h2>
+            <a href="matches.html">Back to matches</a>
+          </div>
+
+          <div class="career-totals">
+            <article><span>Matches</span><strong data-player-matches>0</strong></article>
+            <article><span>Started</span><strong data-player-started>0</strong></article>
+            <article><span>Goals</span><strong data-player-goals>0</strong></article>
+            <article><span>Assists</span><strong data-player-assists>0</strong></article>
+          </div>
+
+          <div class="stats-table">
+            <div class="stats-row stats-head">
+              <span>2025/26</span>
+              <span>Matches</span>
+              <span>Started</span>
+              <span>Goals</span>
+              <span>Assists</span>
+            </div>
+            <div class="stats-row"><span>Premier League</span><strong>0</strong><strong>0</strong><strong>0</strong><strong>0</strong></div>
+            <div class="stats-row"><span>English League Cup</span><strong>0</strong><strong>0</strong><strong>0</strong><strong>0</strong></div>
+            <div class="stats-row"><span>FA Cup</span><strong>0</strong><strong>0</strong><strong>0</strong><strong>0</strong></div>
+            <div class="stats-row"><span>All Competitions</span><strong data-player-matches-row>0</strong><strong data-player-started-row>0</strong><strong data-player-goals-row>0</strong><strong data-player-assists-row>0</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-biography" id="biography">
+        <div class="profile-section-heading">
+          <h2>Biography</h2>
+          <a href="#biography">View all</a>
+        </div>
+        <div class="bio-grid">
+          <article><span>Nationality</span><strong data-player-nationality></strong></article>
+          <article><span>Position</span><strong data-player-position></strong></article>
+          <article><span>Squad Number</span><strong data-player-number></strong></article>
+          <article><span>Age</span><strong data-player-age></strong></article>
+        </div>
+        <p data-player-bio></p>
+      </section>
+
+      <section class="profile-latest" id="latest">
+        <div class="profile-section-heading">
+          <h2>Latest</h2>
+          <a href="news.html">View all</a>
+        </div>
+        <div class="profile-news-grid">
+          <a href="news.html">
+            <img src="assets/first-era-hero.png" alt="" />
+            <span>Club News</span>
+            <h3>Islington FC launches its first era</h3>
+          </a>
+          <a href="shop.html">
+            <img src="assets/new-kit-hero-2026-27.png" alt="" />
+            <span>Store</span>
+            <h3>New red, blue and white kits revealed</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer players-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

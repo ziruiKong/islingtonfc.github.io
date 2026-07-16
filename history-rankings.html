@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History Rankings | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css?v=history-rankings-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="matches.html">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="statistics-page history-rankings-page" data-history-ranking-page>
+      <section class="news-hub-hero matches-hero statistics-hero">
+        <p>Team</p>
+        <h1>History Rankings</h1>
+      </section>
+
+      <nav class="teams-tabs history-rankings-tabs" aria-label="Teams sections">
+        <a href="players.html">Squad</a>
+        <a href="statistics.html">Statistics</a>
+        <a class="is-active" href="history-rankings.html">History Rankings</a>
+        <a href="history-players.html">Predecessor</a>
+      </nav>
+
+      <section class="statistics-shell history-ranking-shell" aria-label="Islington FC historical player rankings">
+        <div class="statistics-toolbar">
+          <div>
+            <span>Club Records</span>
+            <h2>Goals, Assists & Appearances</h2>
+          </div>
+          <div class="statistics-controls">
+            <label>
+              <span>Season</span>
+              <select data-history-ranking-season>
+                <option value="all" selected>All Time</option>
+                <option>2026-27</option>
+                <option>2025-26</option>
+              </select>
+            </label>
+            <label>
+              <span>Competition</span>
+              <select data-history-ranking-competition>
+                <option value="all" selected>All Competitions</option>
+                <option value="premier-league">Premier League</option>
+                <option value="champions-league">UEFA Champions League</option>
+                <option value="carabao-cup">Carabao Cup</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="history-ranking-grid">
+          <section class="history-ranking-card" data-history-ranking-panel="goals"></section>
+          <section class="history-ranking-card" data-history-ranking-panel="assists"></section>
+          <section class="history-ranking-card" data-history-ranking-panel="appearances"></section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="match-data.js?v=history-rankings-1"></script>
+    <script src="script.js?v=history-rankings-1"></script>
+  </body>
+</html>

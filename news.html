@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+  <link rel="stylesheet" href="styles.css?v=wolves-report-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="index.html#tickets">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="news-page news-hub-page">
+      <section class="news-hub-hero matches-hero">
+        <p>Islington FC</p>
+        <h1>News</h1>
+      </section>
+
+      <section class="news-library-shell" aria-label="All Islington FC news">
+        <div class="news-toolbar">
+          <button class="filter-icon" type="button" aria-label="Filter news">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <label class="category-select">
+            <span class="sr-only">Category</span>
+            <select data-news-category>
+              <option value="all">All Categories</option>
+              <option value="Official">Official</option>
+            </select>
+          </label>
+          <button class="feed-toggle is-active" type="button">News</button>
+          <button class="feed-toggle" type="button">Video</button>
+        </div>
+
+        <div class="news-library" data-news-list></div>
+      </section>
+
+      <section class="news-manager" id="news-manager" aria-label="News database manager" hidden>
+        <div class="manager-heading">
+          <span>Local Database</span>
+          <h2>News Database Manager</h2>
+          <p>Add, update, remove, import, and export news records stored in this browser.</p>
+        </div>
+
+        <form class="news-manager-form" data-news-form>
+          <input type="hidden" name="id" />
+          <label>
+            Title
+            <input type="text" name="title" required />
+          </label>
+          <label>
+            Category
+            <input type="text" name="category" required />
+          </label>
+          <label>
+            Date
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Image path
+            <input type="text" name="image" placeholder="assets/example.png" required />
+          </label>
+          <label>
+            Link
+            <input type="text" name="url" placeholder="article.html" required />
+          </label>
+          <label class="manager-span">
+            Summary
+            <textarea name="summary" rows="3" required></textarea>
+          </label>
+          <div class="manager-actions">
+            <button class="primary-action" type="submit">Save News</button>
+            <button class="ghost-action" type="button" data-news-reset>New Record</button>
+            <button class="ghost-action" type="button" data-news-export>Export JSON</button>
+            <button class="ghost-action" type="button" data-news-import>Import JSON</button>
+          </div>
+        </form>
+
+        <div class="news-db-table" data-news-table></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+  <script src="match-data.js?v=southampton-cup-report-1"></script>
+  <script src="news-data.js?v=southampton-cup-report-1"></script>
+  <script src="script.js?v=southampton-cup-report-1"></script>
+  </body>
+</html>

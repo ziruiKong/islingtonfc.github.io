@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Detail | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a class="active" href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="index.html#tickets">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="match-detail-page" data-match-template>
+      <section class="match-detail-hero">
+        <p data-match-competition></p>
+        <time data-match-date></time>
+        <div class="match-detail-score">
+          <div class="match-detail-club">
+            <img data-match-home-logo src="assets/islington-logo.png" alt="" />
+            <strong data-match-home></strong>
+          </div>
+          <div class="match-detail-scorebox" data-match-score></div>
+          <div class="match-detail-club">
+            <img data-match-away-logo src="assets/islington-logo.png" alt="" />
+            <strong data-match-away></strong>
+          </div>
+        </div>
+        <span data-match-stadium></span>
+      </section>
+
+      <div class="match-detail-actions">
+        <a class="match-detail-primary" data-match-report-link href="news.html" hidden>Read match report <span aria-hidden="true">&#8594;</span></a>
+        <a class="match-detail-secondary" data-match-lineup-link href="match-lineups.html" hidden>View lineups <span aria-hidden="true">&#8594;</span></a>
+      </div>
+
+      <nav class="match-detail-tabs" aria-label="Match sections">
+        <a href="#scorers">Scorers</a>
+        <a href="#report">Report</a>
+        <a href="#stats">Stats</a>
+      </nav>
+
+      <section class="match-detail-section" id="scorers">
+        <div class="match-scorers" data-match-scorers></div>
+      </section>
+
+      <section class="match-detail-section match-report" id="report">
+        <p data-match-report></p>
+        <a class="match-report-link" data-match-report-link-inline href="news.html" hidden>Open full report in News <span aria-hidden="true">&#8594;</span></a>
+      </section>
+
+      <section class="match-detail-section" id="stats">
+        <div class="match-stat-grid" data-match-stats></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="match-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

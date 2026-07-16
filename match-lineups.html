@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Lineups | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a class="active" href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="index.html#tickets">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="lineup-page" data-lineup-template>
+      <section class="lineup-layout">
+        <div class="lineup-main">
+          <div class="lineup-heading">
+            <h1>Starting XI</h1>
+            <span data-lineup-formation>Formation 4-3-3</span>
+          </div>
+          <div class="lineup-pitch">
+            <div class="lineup-pitch-lines" aria-hidden="true">
+              <span class="lineup-goal lineup-goal-top"></span>
+              <span class="lineup-goal lineup-goal-bottom"></span>
+              <span class="lineup-box lineup-box-top lineup-penalty-box"></span>
+              <span class="lineup-box lineup-box-top lineup-six-yard-box"></span>
+              <span class="lineup-box lineup-box-bottom lineup-penalty-box"></span>
+              <span class="lineup-box lineup-box-bottom lineup-six-yard-box"></span>
+            </div>
+            <div class="lineup-pitch-players" data-lineup-starters></div>
+          </div>
+        </div>
+
+        <aside class="lineup-sidebar">
+          <div class="lineup-sidebar-section">
+            <h2>Substitutes</h2>
+            <div class="lineup-sub-list" data-lineup-subs></div>
+          </div>
+          <div class="lineup-sidebar-section lineup-coach">
+            <span>Head Coach</span>
+            <strong data-lineup-coach>Conner Welsh</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lineup-fixtures">
+        <div class="lineup-fixtures-head">
+          <h2>Match Cards</h2>
+          <a href="matches.html">View all fixtures <span aria-hidden="true">&#8594;</span></a>
+        </div>
+        <div class="lineup-fixture-carousel">
+          <button class="lineup-fixture-nav lineup-fixture-nav-prev" type="button" aria-label="Previous match cards" data-lineup-related-prev>
+            <span aria-hidden="true">&#8592;</span>
+          </button>
+          <div class="lineup-fixture-grid" data-lineup-related></div>
+          <button class="lineup-fixture-nav lineup-fixture-nav-next" type="button" aria-label="Next match cards" data-lineup-related-next>
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="match-data.js?v=southampton-cup-lineup-2"></script>
+    <script src="script.js?v=southampton-cup-lineup-2"></script>
+  </body>
+</html>

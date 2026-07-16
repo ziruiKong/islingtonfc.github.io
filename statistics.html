@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css?v=stats-export-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="matches.html">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="statistics-page">
+      <section class="news-hub-hero matches-hero statistics-hero">
+        <p>Team</p>
+        <h1>Statistics</h1>
+      </section>
+
+      <section class="statistics-shell" aria-label="Islington FC total player statistics">
+        <div class="statistics-toolbar">
+          <div>
+            <span>Data Table</span>
+            <h2>Player Performance</h2>
+          </div>
+          <div class="statistics-controls">
+            <button class="statistics-export-btn" type="button" data-statistics-export>Export Excel</button>
+            <label>
+              <span>Season</span>
+              <select data-statistics-season>
+                <option selected>2026-27</option>
+                <option>2025-26</option>
+              </select>
+            </label>
+            <label>
+              <span>Competition</span>
+              <select data-statistics-competition>
+                <option value="all" selected>All Competitions</option>
+                <option value="premier-league">Premier League</option>
+                <option value="champions-league">UEFA Champions League</option>
+                <option value="carabao-cup">Carabao Cup</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="statistics-summary" data-statistics-summary></div>
+
+        <div class="statistics-table-wrap">
+          <table class="statistics-table">
+            <thead>
+              <tr>
+                <th><button type="button" data-stat-sort="number">No.</button></th>
+                <th><button type="button" data-stat-sort="name">Player</button></th>
+                <th><button type="button" data-stat-sort="goals.league">PL G</button></th>
+                <th><button type="button" data-stat-sort="goals.champions">UCL G</button></th>
+                <th><button type="button" data-stat-sort="goals.cup">Cup G</button></th>
+                <th><button type="button" data-stat-sort="goals.total">Total G</button></th>
+                <th><button type="button" data-stat-sort="assists.league">PL A</button></th>
+                <th><button type="button" data-stat-sort="assists.champions">UCL A</button></th>
+                <th><button type="button" data-stat-sort="assists.cup">Cup A</button></th>
+                <th><button type="button" data-stat-sort="assists.total">Total A</button></th>
+                <th><button type="button" data-stat-sort="contributionTotal">Total G+A</button></th>
+                <th><button type="button" data-stat-sort="averageRating">Avg Rating</button></th>
+                <th><button type="button" data-stat-sort="appearances">Rated Apps</button></th>
+              </tr>
+            </thead>
+            <tbody data-statistics-table></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="match-data.js?v=stats-export-1"></script>
+    <script src="script.js?v=stats-export-1"></script>
+  </body>
+</html>

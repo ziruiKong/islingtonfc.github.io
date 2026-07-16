@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Support | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="index.html#tickets">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="assistant-page">
+      <section class="assistant-hero">
+        <div class="assistant-hero-copy">
+          <p class="assistant-kicker">Islington FC</p>
+          <h1>AI Support Desk</h1>
+          <p class="assistant-intro">
+            基于站内新闻、比赛、战报和球员数据的本地答疑工具。它不依赖外部接口，回答内容只来自你现在网站里已经录入的信息。
+          </p>
+        </div>
+        <div class="assistant-status-card">
+          <span>Knowledge Source</span>
+          <strong data-assistant-stats>Loading club data...</strong>
+          <p>News, fixtures, reports, scorers, assists, cards and player records.</p>
+        </div>
+      </section>
+
+      <section class="assistant-shell" aria-label="AI support assistant">
+        <aside class="assistant-sidebar">
+          <div class="assistant-panel">
+            <h2>Quick Questions</h2>
+            <div class="assistant-chip-list">
+              <button type="button" data-assistant-prompt="最新新闻是什么？">最新新闻</button>
+              <button type="button" data-assistant-prompt="下一场比赛是什么？">下一场比赛</button>
+              <button type="button" data-assistant-prompt="Mika Biereth 本赛季进了几个球？">Biereth 进球</button>
+              <button type="button" data-assistant-prompt="Álex Baena 有多少助攻和进球？">Baena 数据</button>
+              <button type="button" data-assistant-prompt="告诉我马赛 2比2 伊斯灵顿的战报重点">马赛战报</button>
+              <button type="button" data-assistant-prompt="目前有哪些已录入的比赛？">全部比赛</button>
+            </div>
+          </div>
+
+          <div class="assistant-panel assistant-notes">
+            <h2>It Can Answer</h2>
+            <ul>
+              <li>新闻标题、发布时间、摘要与相关文章</li>
+              <li>比赛比分、日期、场地、进球与助攻</li>
+              <li>球员累计进球、助攻、黄牌与近期评分</li>
+              <li>指定战报、转会公告、俱乐部声明</li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="assistant-chat-panel">
+          <div class="assistant-chat-log" data-assistant-log>
+            <article class="assistant-message assistant-message-bot">
+              <div class="assistant-avatar">AI</div>
+              <div class="assistant-bubble">
+                <p>你好，我是 Islington FC 站内客服。你可以直接问我比赛、新闻、球员或者转会信息。</p>
+              </div>
+            </article>
+          </div>
+
+          <form class="assistant-form" data-assistant-form>
+            <label class="sr-only" for="assistant-input">Ask the club assistant</label>
+            <textarea
+              id="assistant-input"
+              name="prompt"
+              data-assistant-input
+              rows="3"
+              placeholder="例如：Baena 本赛季进了几个球？ 马赛那场谁梅开二度？ 最新转会新闻有哪些？"
+            ></textarea>
+            <div class="assistant-form-actions">
+              <p>仅基于站内数据回答</p>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+        <a href="ai-assistant.html">AI Support</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="news-data.js"></script>
+    <script src="match-data.js"></script>
+    <script src="script.js"></script>
+    <script src="assistant.js"></script>
+  </body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matches | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="matches.html">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="matches-page">
+      <section class="news-hub-hero matches-hero">
+        <p>Islington FC</p>
+        <h1>Matches</h1>
+      </section>
+
+      <section class="fixtures-shell" aria-label="Islington FC fixtures and player rankings">
+        <div class="fixtures-main">
+          <div class="fixtures-control-bar">
+            <div class="fixtures-controls">
+              <div class="fixture-filter">
+                <select aria-label="Select season" data-season-select>
+                  <option>2025-26</option>
+                  <option selected>2026-27</option>
+                </select>
+                <button class="fixture-filter-trigger" type="button">
+                  <svg class="fixture-filter-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 2v4M16 2v4M3.5 9.5h17M5 5h14a1.5 1.5 0 0 1 1.5 1.5V19A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5Z" />
+                  </svg>
+                  <span class="fixture-filter-label">2026-27</span>
+                </button>
+                <div class="fixture-filter-menu">
+                  <button type="button" data-filter-value="2025-26">2025-26</button>
+                  <button type="button" data-filter-value="2026-27">2026-27</button>
+                </div>
+              </div>
+              <div class="fixture-filter">
+                <select aria-label="Select month" data-month-select>
+                  <option value="august" selected>August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                </select>
+                <button class="fixture-filter-trigger" type="button">
+                  <svg class="fixture-filter-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 2v4M16 2v4M3.5 9.5h17M5 5h14a1.5 1.5 0 0 1 1.5 1.5V19A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5Z" />
+                  </svg>
+                  <span class="fixture-filter-label">August</span>
+                </button>
+                <div class="fixture-filter-menu">
+                  <button class="is-selected" type="button" data-filter-value="august">August</button>
+                  <button type="button" data-filter-value="september">September</button>
+                  <button type="button" data-filter-value="october">October</button>
+                  <button type="button" data-filter-value="november">November</button>
+                  <button type="button" data-filter-value="december">December</button>
+                  <button type="button" data-filter-value="january">January</button>
+                  <button type="button" data-filter-value="february">February</button>
+                  <button type="button" data-filter-value="march">March</button>
+                  <button type="button" data-filter-value="april">April</button>
+                  <button type="button" data-filter-value="may">May</button>
+                </div>
+              </div>
+              <div class="fixture-filter fixture-filter-wide">
+                <select aria-label="Select competition" data-competition-select>
+                  <option value="all" selected>All Competitions</option>
+                  <option value="premier-league">Premier League</option>
+                  <option value="champions-league">UEFA Champions League</option>
+                  <option value="carabao-cup">Carabao Cup</option>
+                </select>
+                <button class="fixture-filter-trigger" type="button">
+                  <svg class="fixture-filter-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4ZM17 6h3v1a4 4 0 0 1-4 4M7 6H4v1a4 4 0 0 0 4 4" />
+                  </svg>
+                  <span class="fixture-filter-label">All Competitions</span>
+                </button>
+                <div class="fixture-filter-menu">
+                  <button type="button" data-filter-value="all">All Competitions</button>
+                  <button type="button" data-filter-value="premier-league">Premier League</button>
+                  <button type="button" data-filter-value="champions-league">UEFA Champions League</button>
+                  <button type="button" data-filter-value="carabao-cup">Carabao Cup</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="month-panel is-active" data-month-panel="august" aria-label="August fixtures">
+            <article class="fixture-card" data-competition="premier-league" data-season="2026-27">
+              <div class="fixture-card-top">
+                <time datetime="2026-08-15">Sat 15 Aug 2026</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-leicester-city.png" alt="" />
+                  <strong>Leicester</strong>
+                </div>
+                <div class="fixture-score-box is-win">1 - 2</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">King Power Stadium</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2026-27">
+              <div class="fixture-card-top">
+                <time datetime="2026-08-23">Sat 23 Aug 2026</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-win">4 - 1</div>
+                <div class="fixture-club">
+                  <img src="assets/club-bournemouth.webp" alt="" />
+                  <strong>Bournemouth</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-08-16">Sat 16 Aug 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-tottenham.webp" alt="" />
+                  <strong>Spurs</strong>
+                </div>
+                <div class="fixture-score-box is-draw">0 - 0</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">Tottenham Hotspur Stadium</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-08-23">Sat 23 Aug 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-loss">1 - 2</div>
+                <div class="fixture-club">
+                  <img src="assets/club-sunderland.webp" alt="" />
+                  <strong>Sunderland</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-08-30">Sat 30 Aug 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-manchester-united.webp" alt="" />
+                  <strong>Man Utd</strong>
+                </div>
+                <div class="fixture-score-box is-loss">4 - 0</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">Old Trafford</p>
+            </article>
+          </section>
+
+          <section class="month-panel" data-month-panel="september" aria-label="September fixtures">
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-09-13">Sat 13 Sep 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-loss">0 - 3</div>
+                <div class="fixture-club">
+                  <img src="assets/club-liverpool.webp" alt="" />
+                  <strong>Liverpool</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-09-20">Sat 20 Sep 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-draw">1 - 1</div>
+                <div class="fixture-club">
+                  <img src="assets/club-nottingham-forest.webp" alt="" />
+                  <strong>Nott'm Forest</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="carabao-cup" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-09-24">Wed 24 Sep 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Carabao Cup</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-loss is-pens">1 - 1<small>5 - 6 pens</small></div>
+                <div class="fixture-club">
+                  <img src="assets/club-newcastle.webp" alt="" />
+                  <strong>Newcastle</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-09-27">Sat 27 Sep 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-manchester-city.png" alt="" />
+                  <strong>Man City</strong>
+                </div>
+                <div class="fixture-score-box is-loss">2 - 1</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">Etihad Stadium</p>
+            </article>
+          </section>
+
+          <section class="month-panel" data-month-panel="october" aria-label="October fixtures">
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-10-05">Sun 5 Oct 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-aston-villa.png" alt="" />
+                  <strong>Aston Villa</strong>
+                </div>
+                <div class="fixture-score-box is-loss">1 - 0</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">Villa Park</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-10-18">Sat 18 Oct 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-draw">0 - 0</div>
+                <div class="fixture-club">
+                  <img src="assets/club-leeds.webp" alt="" />
+                  <strong>Leeds</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-10-25">Sat 25 Oct 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-wolves.webp" alt="" />
+                  <strong>Wolves</strong>
+                </div>
+                <div class="fixture-score-box is-draw">1 - 1</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">Molineux Stadium</p>
+            </article>
+          </section>
+
+          <section class="month-panel" data-month-panel="november" aria-label="November fixtures">
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-11-01">Sat 1 Nov 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-win">4 - 2</div>
+                <div class="fixture-club">
+                  <img src="assets/club-arsenal.png" alt="" />
+                  <strong>Arsenal</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-11-08">Sat 8 Nov 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-west-ham.webp" alt="" />
+                  <strong>West Ham</strong>
+                </div>
+                <div class="fixture-score-box is-win">0 - 3</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">London Stadium</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-11-22">Sat 22 Nov 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-win">3 - 0</div>
+                <div class="fixture-club">
+                  <img src="assets/club-chelsea.png" alt="" />
+                  <strong>Chelsea</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-11-29">Sat 29 Nov 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-brentford.webp" alt="" />
+                  <strong>Brentford</strong>
+                </div>
+                <div class="fixture-score-box is-win">0 - 1</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">Brentford Community Stadium</p>
+            </article>
+          </section>
+
+          <section class="month-panel" data-month-panel="december" aria-label="December fixtures">
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-12-03">Wed 3 Dec 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+                <div class="fixture-score-box is-draw">0 - 0</div>
+                <div class="fixture-club">
+                  <img src="assets/club-crystal-palace.webp" alt="" />
+                  <strong>Crystal Palace</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">NAG'S HEAD STADIUM</p>
+            </article>
+
+            <article class="fixture-card" data-competition="premier-league" data-season="2025-26">
+              <div class="fixture-card-top">
+                <time datetime="2025-12-09">Tue 9 Dec 2025</time>
+                <div class="fixture-card-meta">
+                  <span>Premier League</span>
+                </div>
+              </div>
+              <div class="fixture-card-match">
+                <div class="fixture-club">
+                  <img src="assets/club-newcastle.webp" alt="" />
+                  <strong>Newcastle</strong>
+                </div>
+                <div class="fixture-score-box is-win">2 - 4</div>
+                <div class="fixture-club">
+                  <img src="assets/islington-logo.png" alt="" />
+                  <strong>Islington</strong>
+                </div>
+              </div>
+              <p class="fixture-stadium">St James' Park</p>
+            </article>
+          </section>
+
+          <section class="month-panel" data-month-panel="january" aria-label="January fixtures">
+          </section>
+
+          <section class="month-panel" data-month-panel="february" aria-label="February fixtures">
+            <div class="fixture-empty">February fixtures to be confirmed.</div>
+          </section>
+
+          <section class="month-panel" data-month-panel="march" aria-label="March fixtures">
+            <div class="fixture-empty">March fixtures to be confirmed.</div>
+          </section>
+
+          <section class="month-panel" data-month-panel="april" aria-label="April fixtures">
+            <div class="fixture-empty">April fixtures to be confirmed.</div>
+          </section>
+
+          <section class="month-panel" data-month-panel="may" aria-label="May fixtures">
+            <div class="fixture-empty">May fixtures to be confirmed.</div>
+          </section>
+        </div>
+
+        <aside class="ranking-panel compact-stats-panel" aria-label="Islington FC player statistics">
+          <div class="compact-stats-heading">
+            <h2>Total Table</h2>
+            <a href="statistics.html">Expand table <span aria-hidden="true">&#8594;</span></a>
+          </div>
+          <div class="compact-stats-head">
+            <span>Rank</span>
+            <span>Player</span>
+            <span>G</span>
+            <span>A</span>
+            <span>Avg</span>
+          </div>
+          <div class="compact-stats-body" data-compact-stats-table></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="match-data.js?v=southampton-cup-lineup-2"></script>
+    <script src="script.js?v=southampton-cup-lineup-2"></script>
+  </body>
+</html>

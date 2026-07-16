@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predecessor Players | Islington FC</title>
+    <link rel="icon" type="image/png" href="assets/navicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="sponsor-strip" aria-label="Club sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="icon-btn menu-toggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="news.html">News</a>
+            <a href="matches.html">Matches</a>
+            <a href="players.html">Team</a>
+            <a href="about.html">Club</a>
+          </div>
+        </div>
+        <a class="brand" href="index.html" aria-label="Islington FC home">
+          <img class="crest" src="assets/islington-logo.png" alt="" />
+        </a>
+        <div class="nav-actions">
+          <a class="ticket-link" href="index.html#tickets">Tickets <span aria-hidden="true">&#8599;</span></a>
+          <a class="shop-link" href="shop.html">Shop <span aria-hidden="true">&#8599;</span></a>
+          <div class="language-switch" aria-label="Language">
+            <a class="active" href="#" aria-current="true">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="players-page teams-page history-players-page">
+      <section class="teams-header matches-hero">
+        <div class="teams-header-copy">
+          <p>Islington FC</p>
+          <h1>Predecessor</h1>
+        </div>
+      </section>
+
+      <nav class="teams-tabs" aria-label="Predecessor navigation">
+        <a href="players.html">Current Squad</a>
+        <a class="is-active" href="history-players.html">Predecessor Players</a>
+      </nav>
+
+      <section id="history" class="team-panel is-active">
+        <section class="history-controls">
+          <label class="history-search">
+            <span class="sr-only">Search former players</span>
+            <input type="search" placeholder="Search players" data-history-search />
+          </label>
+          <label class="history-filter">
+            <span class="sr-only">Filter by position</span>
+            <select data-history-filter>
+              <option value="all">All Positions</option>
+              <option value="goalkeeper">Goalkeeper</option>
+              <option value="defender">Defender</option>
+              <option value="midfielder">Midfielder</option>
+              <option value="forward">Forward</option>
+            </select>
+          </label>
+        </section>
+        <section class="squad-section">
+          <div class="squad-section-header">
+            <h2>Former Players</h2>
+            <span data-history-count>7 Players</span>
+          </div>
+          <div class="player-grid history-player-grid">
+            <a class="player-card photo-player keeper-card" href="luis-malagon.html" data-history-card data-player-name="Luis Malagon" data-player-position="goalkeeper"><span class="number">1</span><span class="flag flag-mex">MEX</span><div class="player-photo"><img src="assets/luis-malagon.png" alt="Luis Malagon" /></div><p>Luis</p><h3>Malag&oacute;n</h3></a>
+            <a class="player-card photo-player" href="marcos-senesi.html" data-history-card data-player-name="Marcos Senesi" data-player-position="defender"><span class="number">2</span><span class="flag flag-arg">ARG</span><div class="player-photo"><img src="assets/marcos-senesi.png" alt="Marcos Senesi" /></div><p>Marcos</p><h3>Senesi</h3></a>
+            <a class="player-card photo-player" href="dara-oshea.html" data-history-card data-player-name="Dara O'Shea" data-player-position="defender"><span class="number">6</span><span class="flag flag-irl">IRL</span><div class="player-photo"><img src="assets/dara-oshea.png" alt="Dara O'Shea" /></div><p>Dara</p><h3>O'Shea</h3></a>
+            <a class="player-card photo-player" href="leif-davis.html" data-history-card data-player-name="Leif Davis" data-player-position="defender"><span class="number">15</span><span class="flag flag-eng">ENG</span><div class="player-photo"><img src="assets/leif-davis.png" alt="Leif Davis" /></div><p>Leif</p><h3>Davis</h3></a>
+            <a class="player-card photo-player" href="diego-lainez.html" data-history-card data-player-name="Diego Lainez" data-player-position="midfielder"><span class="number">18</span><span class="flag flag-mex">MEX</span><div class="player-photo"><img src="assets/diego-lainez.png" alt="Diego Lainez" /></div><p>Diego</p><h3>Lainez</h3></a>
+            <a class="player-card photo-player" href="jack-clarke.html" data-history-card data-player-name="Jack Clarke" data-player-position="forward"><span class="number">7</span><span class="flag flag-eng">ENG</span><div class="player-photo"><img src="assets/jack-clarke.png" alt="Jack Clarke" /></div><p>Jack</p><h3>Clarke</h3></a>
+            <a class="player-card photo-player" href="harry-wilson.html" data-history-card data-player-name="Harry Wilson" data-player-position="forward"><span class="number">11</span><span class="flag flag-wal">WAL</span><div class="player-photo"><img src="assets/harry-wilson.png" alt="Harry Wilson" /></div><p>Harry</p><h3>Wilson</h3></a>
+          </div>
+          <p class="history-empty" data-history-empty hidden>No former players match this search.</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer players-footer">
+      <div class="footer-sponsors">
+        <img src="assets/sponsors-strip.png" alt="Adidas and Sungrow" />
+      </div>
+      <img class="footer-mark" src="assets/islington-logo.png" alt="Islington FC crest" />
+      <div class="footer-links">
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Team</a>
+        <a href="about.html">Club</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <p>&copy; 2026 Islington FC. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
