@@ -7,39 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <style>
-    :root{--ink:#071426;--navy:#101f3a;--burgundy:#6f1f2c;--warm:#f1ece2;--paper:#faf8f3;--line:#101f3a18;--gold:#c6a35b}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
-    a{color:inherit;text-decoration:none}
-    .rail{position:fixed;z-index:9;inset:0 auto 0 0;width:200px;background:var(--burgundy);color:var(--warm);border-right:2px solid var(--gold);display:flex;flex-direction:column}
-    .rail-brand{display:grid;place-items:center;width:100%;padding:42px 24px 38px;margin:0 0 40px;background:var(--navy);border-bottom:2px solid var(--gold)}
-    .tops-wordmark{display:block;width:126px;max-width:100%;line-height:0;margin:0 auto}.tops-wordmark img{display:block;width:100%;height:auto}
-    .rail nav{display:flex;flex-direction:column;gap:18px;padding:0 24px;color:var(--warm);font:700 22px/1.06 "Libre Caslon Display",Georgia,serif;letter-spacing:-.025em}
-    .rail nav a:hover,.rail nav a.active{color:var(--gold)}
-    .page{margin-left:200px;min-height:100vh}
-    .archive-detail{padding:42px clamp(28px,4vw,70px) 90px}
-    .back-link{display:inline-flex;align-items:center;gap:10px;margin:0 0 30px;color:var(--burgundy);font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
-    .title{display:flex;align-items:baseline;gap:16px;margin-bottom:34px;border-bottom:1px solid var(--line);padding-bottom:26px}
-    .title .number{font:800 clamp(42px,5.2vw,76px)/.8 "Libre Caslon Display",Georgia,serif;color:#101f3a72}
-    h1{font:800 clamp(48px,6vw,86px)/.86 "Libre Caslon Display",Georgia,serif;margin:0;color:var(--navy);letter-spacing:-.055em}
-    .layout{display:grid;grid-template-columns:minmax(310px,460px) 1fr;gap:34px;align-items:start}
-    .archive-card{position:sticky;top:22px;min-height:600px;background:#e5dccd;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid #101f3a0d}
-    .archive-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#f1ece240,#cfc3b252),url('assets/home-kit-story-pattern.webp') center/cover;opacity:.58}
-    .archive-card:after{content:attr(data-number);position:absolute;left:-20px;top:54px;font:900 500px/.7 "Libre Caslon Display",Georgia,serif;color:#101f3a09;letter-spacing:-.08em}
-    .archive-card img{position:absolute;z-index:1;left:0;right:0;bottom:86px;width:100%;height:500px;object-fit:contain;object-position:center bottom}
-    .badge{position:absolute;z-index:2;right:18px;top:18px;display:inline-grid;place-items:center;min-width:54px;height:26px;border-radius:999px;border:1px solid #f8f5ee80;background:#f8f5ee35;color:var(--navy);backdrop-filter:blur(8px);font-size:10px;font-weight:900;letter-spacing:.12em}
-    .archive-meta{position:relative;z-index:2;background:var(--warm);border-top:1px solid var(--line);padding:22px 18px}.archive-meta b{display:block;font:800 36px/.88 "Libre Caslon Display",Georgia,serif;letter-spacing:-.045em;color:var(--navy)}.archive-meta span{display:block;margin-top:12px;color:#101f3a9a;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
-    h2{font:800 clamp(34px,3.4vw,48px)/.9 "Libre Caslon Display",Georgia,serif;letter-spacing:-.045em;color:var(--navy);margin:0 0 28px}
-    .stats{display:grid;grid-template-columns:repeat(4,minmax(90px,1fr));gap:24px;margin-bottom:42px}.stat-label{font:700 21px/1 "Libre Caslon Display",Georgia,serif;color:var(--navy);margin-bottom:18px}.stat-value{font:900 clamp(56px,5.6vw,82px)/.72 "Libre Caslon Display",Georgia,serif;color:var(--navy);letter-spacing:-.06em}
-    .season-list{border-bottom:1px solid var(--line);margin-bottom:34px}.season-row{display:grid;grid-template-columns:minmax(120px,1fr) repeat(5,minmax(82px,120px));gap:18px;align-items:end;border-top:1px solid var(--line);padding:30px 0}.season-row:first-child{border-top:0;padding-top:0}.season-row small{display:block;color:#101f3a92;font-weight:700;margin-bottom:22px}.season{font:700 32px/1 "Libre Caslon Display",Georgia,serif;color:var(--navy)}.season-note{display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin-top:12px;min-width:92px;padding:9px 12px;border:1px solid #101f3a24;background:#f8f5ee8a;color:var(--burgundy);text-align:center;text-transform:uppercase}.season-note-main{display:block;width:100%;font-size:18px;font-weight:900;line-height:.95;letter-spacing:.12em}.season-note-club{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;color:var(--navy);font-size:11px;font-weight:900;line-height:1.05;letter-spacing:.06em}.season-note-club img{display:block;width:22px;height:22px;object-fit:contain}.season-value{font:900 34px/.9 "Libre Caslon Display",Georgia,serif;color:var(--navy)}
-    .bio{border-bottom:1px solid var(--line);padding-bottom:34px;margin-bottom:34px}.bio p{max-width:860px;font-size:21px;line-height:1.34;margin:0;color:var(--navy)}
-    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-bottom:1px solid var(--line);padding-bottom:34px}.fact-label{display:block;margin-bottom:12px;color:#101f3a9a;font-weight:700}.fact-value{display:flex;align-items:center;gap:10px;font:700 32px/1 "Libre Caslon Display",Georgia,serif;color:var(--navy)}.fact-value img{width:32px;height:32px;object-fit:cover;border-radius:50%;background:#f8f5ee;border:1px solid #101f3a18}
-    .transfer-record{border-bottom:1px solid var(--line);padding:42px 0 38px;margin-bottom:34px}.transfer-record h2{margin-bottom:22px}.transfer-list{display:grid;gap:16px}.transfer-item{position:relative;display:grid;grid-template-columns:120px minmax(0,1fr) minmax(150px,auto);gap:26px;align-items:center;background:linear-gradient(180deg,#fffaf2,#f3eadf);border:1px solid #101f3a18;padding:24px 26px;box-shadow:0 14px 30px #101f3a0c;overflow:hidden}.transfer-item:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--burgundy),var(--navy));opacity:.95}.transfer-kind{display:inline-flex;width:max-content;min-height:28px;align-items:center;padding:0 10px;border:1px solid #6f1f2c30;background:#fff;color:var(--burgundy);font-size:9px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.transfer-main b{display:block;color:var(--navy);font:800 30px/.92 "Libre Caslon Display",Georgia,serif;letter-spacing:-.035em}.transfer-main span{display:block;margin-top:10px;color:#101f3a9a;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.transfer-fee{min-width:150px;text-align:right;color:var(--navy);font:900 30px/.9 "Libre Caslon Display",Georgia,serif;letter-spacing:-.035em}.transfer-fee:before{content:"Transfer fee";display:block;margin-bottom:9px;color:#101f3a72;font:900 9px/1 "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase}.transfer-link{display:inline-flex;margin-top:18px;color:var(--burgundy);font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
-    .not-found{max-width:680px;padding:64px clamp(28px,4vw,70px)}
-    footer{background:#020936;color:#f1ece2;padding:74px 0 0;overflow:hidden}.tops-pattern{overflow:hidden}.tops-pattern-track{display:flex;align-items:center;gap:76px;width:max-content;animation:topsMarquee 24s linear infinite}.tops-pattern-item{display:flex;align-items:center;gap:.16em;white-space:nowrap;color:#f1ece2;font:italic clamp(128px,13.8vw,228px)/.78 Georgia,serif;letter-spacing:-.065em;text-transform:uppercase}.tops-pattern-item img{width:.86em;height:.86em;object-fit:contain;display:block;transform:translateY(-.015em)}@keyframes topsMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    @media(max-width:1100px){.layout{grid-template-columns:1fr}.archive-card{position:relative;top:auto;min-height:430px}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.rail{display:none}.page{margin-left:0}.archive-detail{padding:28px 20px 70px}.title{align-items:flex-start;flex-direction:column;gap:8px}.season-row{grid-template-columns:1fr 1fr;gap:22px}.facts{grid-template-columns:1fr}.transfer-item{grid-template-columns:1fr;align-items:start}.transfer-fee{text-align:left}.bio p{font-size:18px}.stat-value{font-size:56px}}
-  </style>
+  <link rel="stylesheet" href="assets/player-profile.css">
 </head>
 <body>
   <aside class="rail">
@@ -47,105 +15,26 @@
     <nav><a href="index.html#fixtures">Matches</a><a class="active" href="mens-first-team.html">Teams</a><a href="index.html#tickets">Tickets</a><a href="index.html#membership">Membership</a><a href="index.html#shop">Shop IFC</a><a href="index.html#play">IFC PLAY</a><a href="index.html#club">The Club</a><a href="index.html#latest">Explore</a></nav>
   </aside>
   <main class="page">
-    <article class="archive-detail" id="archive-detail" hidden>
-      <a class="back-link" href="predecessor-players.html">Back to predecessor players</a>
-      <header class="title"><span class="number" data-field="number"></span><h1 data-field="name"></h1></header>
-      <div class="layout">
-        <aside class="archive-card" data-field="card"><img data-field="photo" alt="" hidden><span class="badge" data-field="positionShort"></span><div class="archive-meta"><b data-field="cardName"></b><span data-field="cardMeta"></span></div></aside>
-        <div>
-          <section>
-            <h2>Club Archive Stats</h2>
-            <div class="stats">
-              <div><div class="stat-label">Appearances</div><div class="stat-value" data-stat="appearances"></div></div>
-              <div><div class="stat-label">Goals</div><div class="stat-value" data-stat="goals"></div></div>
-              <div><div class="stat-label">Assists</div><div class="stat-value" data-stat="assists"></div></div>
-              <div><div class="stat-label">Clearances</div><div class="stat-value" data-stat="clearances"></div></div>
-            </div>
-            <div class="season-list" data-season-list></div>
-          </section>
-          <section class="bio"><h2>Club File</h2><p data-field="bio"></p></section>
-          <section class="facts">
-            <div><span class="fact-label">Nationality</span><span class="fact-value"><img data-field="flag" alt="" hidden><span data-field="nationality"></span></span></div>
-            <div><span class="fact-label">Position</span><span class="fact-value" data-field="position"></span></div>
-            <div><span class="fact-label">Record Type</span><span class="fact-value">Predecessor</span></div>
-          </section>
-          <section class="transfer-record" data-transfer-section hidden><h2>Transfer Record</h2><div class="transfer-list" data-transfer-list></div><a class="transfer-link" href="transfer-history.html">View transfer history</a></section>
-        </div>
-      </div>
-    </article>
-    <section class="not-found" id="player-not-found" hidden><h1>Archive Not Found</h1><p><a class="back-link" href="predecessor-players.html">Back to predecessor players</a></p></section>
+    <article class="profile" id="player-profile" hidden></article>
+    <section class="not-found" id="player-not-found" hidden>
+      <h1>Archive Not Found</h1>
+      <p><a class="back-link" href="predecessor-players.html">Back to predecessor players</a></p>
+    </section>
     <footer><div class="tops-pattern" aria-label="TOPS brand pattern"><div class="tops-pattern-track"><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span><span class="tops-pattern-item">TOPS <img src="assets/islington-hat-cream-transparent.webp" alt=""></span></div></div></footer>
   </main>
+  <script>
+    window.TOPS_PROFILE_CONFIG = {
+      dataKey: "TOPS_PREDECESSOR_PLAYER_DATA",
+      backHref: "predecessor-players.html",
+      backLabel: "Back to predecessor players",
+      profileKind: "CLUB ARCHIVE",
+      statsTitle: "Club Archive Stats",
+      bioTitle: "Club File",
+      isArchive: true
+    };
+  </script>
   <script src="assets/predecessor-player-data.js"></script>
   <script src="assets/transfer-data.js"></script>
-  <script>
-    const players = window.TOPS_PREDECESSOR_PLAYER_DATA || [];
-    const id = new URLSearchParams(window.location.search).get('id') || players[0]?.id;
-    const player = players.find((item) => item.id === id);
-    const detail = document.querySelector('#archive-detail');
-    const notFound = document.querySelector('#player-not-found');
-    if (!player) {
-      notFound.hidden = false;
-    } else {
-      document.title = `${player.name} Club Archive | TOPS`;
-      detail.hidden = false;
-      detail.querySelector('[data-field="number"]').textContent = player.number;
-      detail.querySelector('[data-field="name"]').textContent = player.name;
-      detail.querySelector('[data-field="card"]').dataset.number = player.number;
-      const photo = detail.querySelector('[data-field="photo"]');
-      if (player.photo) {
-        photo.src = player.photo;
-        photo.alt = player.name;
-        photo.hidden = false;
-      }
-      detail.querySelector('[data-field="positionShort"]').textContent = player.positionShort;
-      detail.querySelector('[data-field="cardName"]').textContent = player.name;
-      detail.querySelector('[data-field="cardMeta"]').textContent = `${player.position} / ${player.seasons}`;
-      detail.querySelector('[data-field="bio"]').textContent = `${player.name} is archived as a predecessor player after appearing in the club's ${player.seasons} all-competitions records. This page keeps the player's TOPS club file separate from the current first-team squad while preserving their season statistics.`;
-      const flag = detail.querySelector('[data-field="flag"]');
-      if (player.flag) {
-        flag.src = player.flag;
-        flag.alt = player.nationality;
-        flag.hidden = false;
-      }
-      detail.querySelector('[data-field="nationality"]').textContent = player.nationality;
-      detail.querySelector('[data-field="position"]').textContent = player.position;
-      const seasonStats = player.seasonStats || [{ season: player.seasons || "2025/26", ...player.stats }];
-      const careerStats = seasonStats.reduce((totals, item) => ({
-        appearances: totals.appearances + Number(item.appearances ?? 0),
-        goals: totals.goals + Number(item.goals ?? 0),
-        assists: totals.assists + Number(item.assists ?? 0),
-        clearances: totals.clearances + Number(item.clearances ?? item.cleanSheets ?? 0),
-        ratedApps: totals.ratedApps + Number(item.ratedApps ?? item.appearances ?? 0)
-      }), { appearances: 0, goals: 0, assists: 0, clearances: 0, ratedApps: 0 });
-      detail.querySelectorAll('.stats [data-stat]').forEach((node) => {
-        node.textContent = careerStats[node.dataset.stat] ?? 0;
-      });
-      detail.querySelector('[data-season-list]').innerHTML = seasonStats.map((item) => `
-        <div class="season-row">
-          <div><div class="season">${item.season}</div>${item.loanClub ? `<span class="season-note"><span class="season-note-main">Loan</span><span class="season-note-club">${item.loanLogo ? `<img src="${item.loanLogo}" alt="">` : ''}${item.loanClub}</span></span>` : ''}</div>
-          <div><small>Apps</small><div class="season-value">${item.appearances ?? 0}</div></div>
-          <div><small>Goals</small><div class="season-value">${item.goals ?? 0}</div></div>
-          <div><small>Assists</small><div class="season-value">${item.assists ?? 0}</div></div>
-          <div><small>Clearances</small><div class="season-value">${item.clearances ?? item.cleanSheets ?? 0}</div></div>
-          <div><small>Avg Rating</small><div class="season-value">${item.averageRating ?? "0.0"}</div></div>
-        </div>
-      `).join('');
-      const transferWindows = window.TOPS_TRANSFER_DATA?.windows || [];
-      const transferRecords = transferWindows.flatMap((windowItem) => [
-        ...windowItem.arrivals.filter((item) => item.playerId === player.id).map((item) => ({ kind: "Arrival", season: windowItem.season, main: `From ${item.from}`, detail: item.weeklyWage ? `Weekly wage ${item.weeklyWage}` : "", fee: item.fee })),
-        ...(windowItem.academyPromotions || []).filter((item) => item.playerId === player.id).map((item) => ({ kind: "Academy", season: windowItem.season, main: `From ${item.from}`, detail: item.weeklyWage ? `Weekly wage ${item.weeklyWage}` : item.note || "", fee: item.fee })),
-        ...windowItem.departures.filter((item) => item.playerId === player.id).map((item) => ({ kind: "Departure", season: windowItem.season, main: `To ${item.destination}`, detail: "", fee: item.fee })),
-        ...(windowItem.loansOut || []).filter((item) => item.playerId === player.id).map((item) => ({ kind: "Loan Out", season: windowItem.season, main: `To ${item.destination}`, detail: item.type || "Loan", fee: item.type || "Loan" }))
-      ]);
-      const transferSection = detail.querySelector('[data-transfer-section]');
-      if (transferRecords.length) {
-        transferSection.hidden = false;
-        detail.querySelector('[data-transfer-list]').innerHTML = transferRecords.map((record) => `
-          <article class="transfer-item"><div class="transfer-kind">${record.kind}</div><div class="transfer-main"><b>${record.main}</b><span>${record.season}${record.detail ? ` / ${String(record.detail).replace(/EUR/g, "€")}` : ''}</span></div><div class="transfer-fee">${String(record.fee).replace(/EUR/g, "€")}</div></article>
-        `).join('');
-      }
-    }
-  </script>
+  <script src="assets/player-profile.js"></script>
 </body>
 </html>
